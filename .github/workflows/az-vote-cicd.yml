@@ -19,7 +19,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.3.4
     - name: Azure Login
-      uses: azure/actions/login@v1
+      uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Create Frontend Image Tags
